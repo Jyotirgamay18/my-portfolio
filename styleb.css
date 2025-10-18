@@ -1,0 +1,177 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background: #121212;
+    color: #f0f0f0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+#theme-toggle {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#hero h2 {
+    font-size: 2.2rem;
+}
+
+.btn {
+    background: #ffd700;
+    color: #333;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #333;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-bottom: 40px;
+}
+
+.skill {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-weight: 600;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+/* Progress Bars */
+.skill-bar {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.progress {
+    background: #f0f0f0;
+    border-radius: 15px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background: linear-gradient(90deg, #ff6ec4, #7873f5);
+    height: 100%;
+    width: 0%;
+    border-radius: 15px;
+    transition: width 1s ease-in-out;
+}
+
+/* Projects */
+.project-card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.projec
